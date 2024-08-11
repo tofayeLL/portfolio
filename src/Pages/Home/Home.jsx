@@ -4,6 +4,7 @@ import Nav from "../Nav/Nav";
 import { Typewriter } from "react-simple-typewriter";
 import image from '../../assets/images/pictures/github2.png';
 import Skills from "../../components/Skills/Skills";
+import Blogs from "../../components/Blogs/Blogs";
 
 
 const Home = () => {
@@ -142,6 +143,11 @@ const Home = () => {
             {/* skills */}
             <div id="skills" className="lg:px-16 px-4">
                 <Skills></Skills>
+            </div>
+
+            {/* skills */}
+            <div id="blogs" className="lg:px-16 px-4">
+                <Blogs></Blogs>
             </div>
 
 
