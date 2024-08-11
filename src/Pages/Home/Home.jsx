@@ -3,6 +3,7 @@ import About from "../../components/About/About";
 import Nav from "../Nav/Nav";
 import { Typewriter } from "react-simple-typewriter";
 import image from '../../assets/images/pictures/github2.png';
+import Skills from "../../components/Skills/Skills";
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
 
                                 <span className='lg:text-5xl text-xl font-bold '>
                                     <Typewriter
-                                        words={['Im Tofayel Ahmed']}
+                                        words={["I'm Tofayel Ahmed"]}
                                         loop={6}
                                         cursor
                                         cursorStyle=''
@@ -133,8 +134,14 @@ const Home = () => {
 
 
             {/* about */}
-            <div className="pt-20 lg:px-16 px-4">
+            <div className="lg:px-16 px-4" id="about">
                 <About></About>
+            </div>
+
+
+            {/* skills */}
+            <div id="skills" className="lg:px-16 px-4">
+                <Skills></Skills>
             </div>
 
 

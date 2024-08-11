@@ -9,7 +9,7 @@ const Nav = () => {
 
 
 
-            <div className="navbar fixed z-10  bg-opacity-20  text-white bg-[#23226b] py-2">
+            <div className="navbar fixed z-10  bg-opacity-20 bg-white text-white lg:bg-[#23226b] py-2">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,19 +28,30 @@ const Nav = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black ">
+                              <Link
+                            to="home"
+                            smooth={true}
+                            duration={1000}
+                           
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Home
+                        </Link>
+                      
+                        <Link
+                            to="about"
+                            smooth={true}
+                            duration={1000}
+                            
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            About
+                        </Link>
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-xl text-white">daisyUI</a>
                 </div>
                 <div className="navbar-end hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 space-x-6  text-white">

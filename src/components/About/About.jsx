@@ -18,14 +18,14 @@ const About = () => {
 
 
     return (
-        <section id="about" >
+        <section className="py-20" >
 
 
             <div className="text-center">
                 {/* title */}
                 <div className="lg:pl-0 pl-6">
 
-                    <a className="relative px-6 py-6 font-semibold text-slate-200 group">
+                    <a className="relative px-6 py-4 font-semibold text-slate-200 group">
                         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-purple-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full border-4 border-slate-400 "></span>
                         <span className="relative px-2 py-2 font-bold  lg:text-4xl text-xl uppercase">ABOUT ME</span>
@@ -40,9 +40,9 @@ const About = () => {
 
 
 
-            <div className="text-white pt-16 text-center">
+            <div className="text-white  pt-8 text-center">
 
-                <p className="text-2xl text-slate-300 font-semibold">Passionate Web developer, dedicated to creating impactful solutions.</p>
+                <p className="lg:text-2xl text-lg text-slate-300 font-semibold">Passionate Web developer, dedicated to creating impactful solutions.</p>
 
 
 
@@ -58,14 +58,14 @@ const About = () => {
 
 
 
-            <div  className="flex justify-between items-center pt-0">
+            <div  className="flex lg:flex-row-reverse flex-col justify-between items-center  gap-10 pt-0">
                 
 
-                <div className='flex-1'>
+                <div className='flex-1 lg:text-start text-center '>
 
                     {/* text content */}
                     <div className="pt-24 space-y-2">
-                        <div className='flex items-center'>
+                        <div className='flex items-center lg:justify-start justify-center '>
                             <span><img src="https://raw.githubusercontent.com/kekoawong/kekoawong/master/wave2.gif" alt="" className='w-16 ' /></span>
 
                             <h1 className="lg:text-4xl text-2xl text-slate-300">Hello !  </h1>
@@ -74,7 +74,7 @@ const About = () => {
                         </div>
                         <h1 className="lg:text-4xl text-2xl "> <span className="text-purple-400">
                             <Typewriter
-                                words={['Im Tofayel Ahmed']}
+                                words={["I'm Tofayel Ahmed"]}
                                 loop={6}
                                 cursor
                                 cursorStyle=''
@@ -84,7 +84,7 @@ const About = () => {
 
                             /></span></h1>
 
-                        <p className="lg:w-[75%]  lg:text-lg text-base text-slate-300 pb-4">A web developer and specializes in front-end technologies. I specialize in using HTML, CSS, JavaScript,React , Node.js, Express, Firebase, and MongoDB to bring ideas to life on the web. I have a keen interest in technology and design, always exploring new tools and techniques to enhance my skills. I'm highly passionate about JavaScript-based software development technologies such as MERN Stack (MongoDB, Express.js, React, Node.js). </p>
+                        <p className="  lg:text-lg text-base text-slate-300 pb-4">A web developer and specializes in front-end technologies. I specialize in using HTML, CSS, JavaScript,React , Node.js, Express, Firebase, and MongoDB to bring ideas to life on the web. I have a keen interest in technology and design, always exploring new tools and techniques to enhance my skills. I'm highly passionate about JavaScript-based software development technologies such as MERN Stack (MongoDB, Express.js, React, Node.js). </p>
 
 
 
