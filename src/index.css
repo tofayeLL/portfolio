@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/*
+-------------this is for smooth scroll css default property -------
+but i use in this resume react scroll------thats why this one i did comment.......
+
+
+
+
+html {
+  scroll-behavior: smooth;
+  
+} 
+  
+*/

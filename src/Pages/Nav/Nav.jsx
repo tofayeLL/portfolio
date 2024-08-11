@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
+
 
 
 const Nav = () => {
@@ -7,7 +9,7 @@ const Nav = () => {
 
 
 
-            <div className="navbar ">
+            <div className="navbar fixed z-10  bg-opacity-20  text-white bg-[#23226b] py-2">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,60 +45,36 @@ const Nav = () => {
                 <div className="navbar-end hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1 space-x-6  text-white">
 
-                       
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                                to={'/'}>
-                                Home
-                            </NavLink>
-                   
-
-                     
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                               id="about">
-                                About
-                            </NavLink>
+                      {/* this "Link" import from react scroll not react dom */}
+                       <Link
+                            to="home"
+                            smooth={true}
+                            duration={1000}
+                           
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Home
+                        </Link>
                       
-
-                        
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                                to={'/skill'}>
-                                Skills
-                            </NavLink>
-                     
-
-                      
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                                to={'/project'}>
-                                Projects
-                            </NavLink>
-                      
-                        
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                                to={'/education'}>
-                                Education
-                            </NavLink>
-                       
-                       
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                                to={'/blog'}>
-                                Blogs
-                            </NavLink>
-                      
-                       
+                        <Link
+                            to="about"
+                            smooth={true}
+                            duration={1000}
                             
-                    
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            About
+                        </Link>
+
+                        
+
+
+
+
+
+
+
+
 
 
 

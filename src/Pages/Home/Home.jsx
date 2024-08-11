@@ -2,12 +2,12 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import About from "../../components/About/About";
 import Nav from "../Nav/Nav";
 import { Typewriter } from "react-simple-typewriter";
-import  image from '../../assets/images/pictures/github2.png';
+import image from '../../assets/images/pictures/github2.png';
 
 
 const Home = () => {
     return (
-        <section className=" min-h-screen bg-[#23226b] lg:px-10 px-4"   >
+        <section className=" min-h-screen bg-[#23226b] "   >
             {/* nav */}
             <div>
                 <Nav></Nav>
@@ -15,7 +15,7 @@ const Home = () => {
 
 
             {/* home */}
-            <div className="flex  lg:flex-row flex-col justify-between items-center">
+            <div className="flex  lg:flex-row flex-col justify-between items-center lg:px-16 px-4" id="home" >
 
 
                 <div className="flex flex-1 justify-center items-center min-h-screen lg:p-0 p-4">
@@ -23,7 +23,7 @@ const Home = () => {
 
                     <div className="lg:w-[100%] mx-auto text-center">
 
-                        <div className="text-base-300 space-y-8   text-center">
+                        <div className="text-base-300 space-y-4   text-center">
                             <h1 className="lg:text-6xl text-2xl font-semibold text-purple-500 flex justify-center items-center gap-2"> <span><img src="https://raw.githubusercontent.com/kekoawong/kekoawong/master/wave2.gif" alt="" className='lg:w-24 w-12 ' /></span> <span className="text-slate-200">Hi,
                             </span>
 
@@ -42,11 +42,38 @@ const Home = () => {
 
                             </h1>
 
-                            <p className="lg:text-base text-sm font-medium text-slate-300 ">A junior front-end web developer passionate about creating responsive and intuitive web interfaces.I'm passionate about blending creativity with technical skills to build engaging digital experiences. Constantly learning and exploring new technologies, I strive to stay updated with industry trends and best practices.
+                            {/* <p className="lg:text-base text-sm font-medium text-slate-300 ">A junior front-end web developer passionate about creating responsive and intuitive web interfaces.I'm passionate about blending creativity with technical skills to build engaging digital experiences. Constantly learning and exploring new technologies, I strive to stay updated with industry trends and best practices.
 
+                            </p> */}
+                            <p className="lg:text-4xl text-xl font-bold">
+                            Creative Web Developer/>
                             </p>
 
                             <p className="lg:text-base text-sm">Feel free to explore my portfolio and reach out if you’d like to connect!</p>
+
+                            <div className="flex justify-center items-center gap-5 py-3">
+                                       <div>
+                                       <a href="https://drive.google.com/file/d/1i4kF4jeuc6cBGbmokiWMjMMJE4HBLty3/view?usp=sharing" target="_blank" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                            <span class="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
+                                            <span class="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
+                                                <span class="relative text-white">Download Resume</span>
+                                            </span>
+                                        </a>
+                                       </div>
+
+
+                                       <div>
+                                       <a href="#_" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                            <span class="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
+                                            <span class="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
+                                                <span class="relative text-white">Contact Me</span>
+                                            </span>
+                                        </a>
+                                       </div>
+
+
+                                        
+                                    </div>
 
 
 
@@ -66,7 +93,12 @@ const Home = () => {
                                     <a rel="noopener noreferrer" href="https://www.instagram.com/?hl=en" title="Instagram" className="hover:scale-110 transition">
                                         <FaInstagram className="w-12 h-12 border-2 border-purple-400  p-1 rounded-full text-blue-400 fill-current  "></FaInstagram>
                                     </a>
+
+                                  
+
+
                                 </div>
+
 
 
 
@@ -94,12 +126,14 @@ const Home = () => {
 
 
 
+
+
             </div>
 
 
 
             {/* about */}
-            <div>
+            <div className="pt-20 lg:px-16 px-4">
                 <About></About>
             </div>
 
