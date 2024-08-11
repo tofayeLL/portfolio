@@ -5,6 +5,8 @@ import { Typewriter } from "react-simple-typewriter";
 import image from '../../assets/images/pictures/github2.png';
 import Skills from "../../components/Skills/Skills";
 import Blogs from "../../components/Blogs/Blogs";
+import Contact from "../../components/Contact/Contact";
+import { Link } from "react-scroll";
 
 
 const Home = () => {
@@ -54,28 +56,31 @@ const Home = () => {
                             <p className="lg:text-base text-sm">Feel free to explore my portfolio and reach out if you’d like to connect!</p>
 
                             <div className="flex justify-center items-center gap-5 py-3">
-                                       <div>
-                                       <a href="https://drive.google.com/file/d/1II7ro9pWYJCZe39OKFcTyqWJ23BP-FlS/view?usp=sharing" target="_blank" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-                                            <span class="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
-                                            <span class="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
-                                                <span class="relative text-white">Download Resume</span>
-                                            </span>
-                                        </a>
-                                       </div>
+                                <div>
+                                    <a href="https://drive.google.com/file/d/1II7ro9pWYJCZe39OKFcTyqWJ23BP-FlS/view?usp=sharing" target="_blank" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                        <span className="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
+                                        <span className="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
+                                            <span className="relative text-white">Download Resume</span>
+                                        </span>
+                                    </a>
+                                </div>
 
 
-                                       <div>
-                                       <a href="#_" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-                                            <span class="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
-                                            <span class="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
-                                                <span class="relative text-white">Contact Me</span>
-                                            </span>
-                                        </a>
-                                       </div>
+                                <div>
+                                    <Link to="contact"
+                                        smooth={true}
+                                        duration={1500}
+                                        className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                        <span className="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
+                                        <span className="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
+                                            <span className="relative text-white">Contact Me</span>
+                                        </span>
+                                    </Link>
+                                </div>
 
 
-                                        
-                                    </div>
+
+                            </div>
 
 
 
@@ -96,7 +101,7 @@ const Home = () => {
                                         <FaInstagram className="w-12 h-12 border-2 border-purple-400  p-1 rounded-full text-blue-400 fill-current  "></FaInstagram>
                                     </a>
 
-                                  
+
 
 
                                 </div>
@@ -148,6 +153,10 @@ const Home = () => {
             {/* skills */}
             <div id="blogs" className="lg:px-16 px-4">
                 <Blogs></Blogs>
+            </div>
+            {/* skills */}
+            <div id="contact" className="lg:px-16 px-4">
+                <Contact></Contact>
             </div>
 
 

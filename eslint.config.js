@@ -33,6 +33,9 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      "rules": {
+    "react/no-unescaped-entities": "off"
+  }
     },
   },
 ]
