@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <section>
+        <section >
 
 
 
-            <div className="navbar bg-base-100">
+            <div className="navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,7 +41,7 @@ const Nav = () => {
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                 </div>
                 <div className="navbar-end hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 space-x-6">
+                    <ul className="menu menu-horizontal px-1 space-x-6  text-white">
 
                        
                             <NavLink className={({ isActive }) =>
@@ -56,7 +56,7 @@ const Nav = () => {
                             <NavLink className={({ isActive }) =>
                                 isActive ? 'text-primary font-bold' : 'font-bold'
                             }
-                                to={'/about'}>
+                               id="about">
                                 About
                             </NavLink>
                       
@@ -95,12 +95,7 @@ const Nav = () => {
                             </NavLink>
                       
                        
-                            <NavLink className={({ isActive }) =>
-                                isActive ? 'text-primary font-bold' : 'font-bold'
-                            }
-                                to={'/contact'}>
-                                Contact
-                            </NavLink>
+                            
                     
 
 
