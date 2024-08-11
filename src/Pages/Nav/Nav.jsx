@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+
 import { Link } from "react-scroll";
 
 
@@ -65,6 +65,64 @@ const Nav = () => {
                         >
                             About
                         </Link>
+
+                        <Link
+                            to="skills"
+                            smooth={true}
+                            duration={1000}
+                            
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Skills
+                        </Link>
+
+
+                        <Link
+                            to="projects"
+                            smooth={true}
+                            duration={1000}
+                            
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Projects
+                        </Link>
+
+
+
+                         <Link
+                            to="education"
+                            smooth={true}
+                            duration={1000}
+                            
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Education
+                        </Link>
+
+                        <Link
+                            to="blogs"
+                            smooth={true}
+                            duration={1000}
+                            
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Blogs
+                        </Link>
+
+
+                        <Link
+                            to="contact"
+                            smooth={true}
+                            duration={1000}
+                            
+                            className="text-base font-semibold hover:border-b-2 hover:border-purple-600 cursor-pointer"
+                        >
+                            Contact
+                        </Link>
+
+
+
+
 
                         
 

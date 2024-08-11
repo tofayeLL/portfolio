@@ -2,7 +2,7 @@
 
 const Skills = () => {
     return (
-       <section>
+       <section id="skills">
         <h1>I am from skills</h1>
 
        </section>

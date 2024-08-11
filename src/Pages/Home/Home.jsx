@@ -53,7 +53,7 @@ const Home = () => {
 
                             <div className="flex justify-center items-center gap-5 py-3">
                                        <div>
-                                       <a href="https://drive.google.com/file/d/1i4kF4jeuc6cBGbmokiWMjMMJE4HBLty3/view?usp=sharing" target="_blank" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                       <a href="https://drive.google.com/file/d/1II7ro9pWYJCZe39OKFcTyqWJ23BP-FlS/view?usp=sharing" target="_blank" class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                                             <span class="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
                                             <span class="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
                                                 <span class="relative text-white">Download Resume</span>

@@ -1,7 +1,22 @@
 import { FaFileDownload } from "react-icons/fa";
+import Lottie from "react-lottie";
 import { Typewriter } from "react-simple-typewriter";
+import  animationData from '../../assets/developerLottie.json';
 
 const About = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
+
+
+
+
     return (
         <section id="about" >
 
@@ -17,21 +32,39 @@ const About = () => {
                     </a>
 
                 </div>
+
+               
+
             </div>
 
 
 
 
+            <div className="text-white pt-16 text-center">
+
+                <p className="text-2xl text-slate-300 font-semibold">Passionate Web developer, dedicated to creating impactful solutions.</p>
+
+
+
+            </div>
+
+
+
+           
 
 
 
 
-            <div  >
+
+
+
+            <div  className="flex justify-between items-center pt-0">
+                
 
                 <div className='flex-1'>
 
                     {/* text content */}
-                    <div className="pt-24 space-y-3">
+                    <div className="pt-24 space-y-2">
                         <div className='flex items-center'>
                             <span><img src="https://raw.githubusercontent.com/kekoawong/kekoawong/master/wave2.gif" alt="" className='w-16 ' /></span>
 
@@ -51,13 +84,13 @@ const About = () => {
 
                             /></span></h1>
 
-                        <p className="lg:text-lg text-base text-slate-300 pb-4">A web developer and specializes in front-end technologies. I specialize in using HTML, CSS, JavaScript,React , Node.js, Express, Firebase, and MongoDB to bring ideas to life on the web. I have a keen interest in technology and design, always exploring new tools and techniques to enhance my skills. I'm highly passionate about JavaScript-based software development technologies such as MERN Stack (MongoDB, Express.js, React, Node.js). </p>
+                        <p className="lg:w-[75%]  lg:text-lg text-base text-slate-300 pb-4">A web developer and specializes in front-end technologies. I specialize in using HTML, CSS, JavaScript,React , Node.js, Express, Firebase, and MongoDB to bring ideas to life on the web. I have a keen interest in technology and design, always exploring new tools and techniques to enhance my skills. I'm highly passionate about JavaScript-based software development technologies such as MERN Stack (MongoDB, Express.js, React, Node.js). </p>
 
 
 
 
-                        <div className="pt-4">
-                            <a href='https://drive.google.com/file/d/1i4kF4jeuc6cBGbmokiWMjMMJE4HBLty3/view?usp=sharing' download="Frontend Developer - Tofayel Ahmed.docx.pdf" target="_blank" className="relative inline-flex items-center justify-center p-4 px-6 py-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
+                        <div className="pt-0">
+                            <a href='https://drive.google.com/file/d/1II7ro9pWYJCZe39OKFcTyqWJ23BP-FlS/view?usp=sharing' download="Frontend Developer - Tofayel Ahmed.docx.pdf" target="_blank" className="relative inline-flex items-center justify-center p-4 px-6 py-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
                                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-800 group-hover:translate-x-0 ease">
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                 </span>
@@ -69,6 +102,22 @@ const About = () => {
                     </div>
 
                 </div>
+
+
+
+
+                {/* lottie */}
+                <div className="flex-1">
+
+                    <Lottie options={defaultOptions}
+
+                    />
+
+                </div>
+
+
+
+
 
 
 
