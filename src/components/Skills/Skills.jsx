@@ -36,7 +36,7 @@ const Skills = () => {
 
 
                         <div className='pt-16'>
-                            <h1 className='text-slate-300 text-2xl'>Versatile skill set with a focus on continuous learning</h1>
+                            <h1 className='text-slate-300 lg:text-2xl text-lg font-semibold'>Versatile skill set with a focus on continuous learning</h1>
                         </div>
 
 

@@ -8,6 +8,7 @@ import Blogs from "../../components/Blogs/Blogs";
 import Contact from "../../components/Contact/Contact";
 import { Link } from "react-scroll";
 import Projects from "../../components/Projects/Projects";
+import Education from "../../components/Education/Education";
 
 
 const Home = () => {
@@ -23,12 +24,12 @@ const Home = () => {
             <div className="flex  lg:flex-row flex-col justify-between items-center lg:px-16 px-4" id="home" >
 
 
-                <div className="flex flex-1 justify-center items-center min-h-screen lg:p-0 p-4">
+                <div className="flex flex-1 justify-center items-center min-h-screen lg:pt-0 pt-7">
 
 
                     <div className="lg:w-[100%] mx-auto text-center">
 
-                        <div className="text-base-300 space-y-4   text-center">
+                        <div className="text-base-300 space-y-4  text-center">
                             <h1 className="lg:text-6xl text-2xl font-semibold text-purple-500 flex justify-center items-center gap-2"> <span><img src="https://raw.githubusercontent.com/kekoawong/kekoawong/master/wave2.gif" alt="" className='lg:w-24 w-12 ' /></span> <span className="text-slate-200">Hi,
                             </span>
 
@@ -47,7 +48,7 @@ const Home = () => {
 
                             </h1>
 
-                        
+
                             <p className="lg:text-4xl text-xl font-bold">
                             Creative Web Developer/>
                             </p>
@@ -61,7 +62,7 @@ const Home = () => {
                                     <a href="https://drive.google.com/file/d/1II7ro9pWYJCZe39OKFcTyqWJ23BP-FlS/view?usp=sharing" target="_blank" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                                         <span className="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
                                         <span className="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
-                                            <span className="relative text-white">Download Resume</span>
+                                            <span className="relative lg:text-lg text-sm text-white">Download Resume</span>
                                         </span>
                                     </a>
                                 </div>
@@ -74,7 +75,7 @@ const Home = () => {
                                         className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                                         <span className="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
                                         <span className="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
-                                            <span className="relative text-white">Contact Me</span>
+                                            <span className="relative lg:text-lg text-sm  text-white">Contact Me</span>
                                         </span>
                                     </Link>
                                 </div>
@@ -151,18 +152,27 @@ const Home = () => {
                 <Skills></Skills>
             </div>
 
-            {/* skills */}
-            <div id="blogs" className="lg:px-16 px-4">
-                <Blogs></Blogs>
-            </div>
-            {/* skills */}
-            <div id="contact" className="lg:px-16 px-4">
-                <Contact></Contact>
-            </div>
             {/* projects */}
             <div id="projects" className="lg:px-16 px-4">
                 <Projects></Projects>
             </div>
+
+            {/* education */}
+            <div id="education" className="lg:px-16 px-4">
+                <Education></Education>
+            </div>
+
+            {/* blogs */}
+            <div id="blogs" className="lg:px-16 px-4">
+                <Blogs></Blogs>
+            </div>
+
+            {/* contact */}
+            <div id="contact" className="lg:px-16 px-4">
+                <Contact></Contact>
+            </div>
+
+
 
 
 

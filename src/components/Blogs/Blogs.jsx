@@ -26,14 +26,14 @@ const Blogs = () => {
 
 
     return (
-        <section className='py-20'>
+        <section className='py-20 lg:block md:block hidden'>
 
 
 
             <div className='text-center'>
 
 
-                <div className='lg:pl-0 pl-6' >
+                <div className='' >
 
                     <a className="relative px-6 py-4 font-semibold text-slate-200 group">
                         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-purple-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
@@ -49,7 +49,7 @@ const Blogs = () => {
 
 
 
-                <div className='lg:block md:block hidden w-full bg-purple-500 rounded-lg mt-20'>
+                <div className=' w-full bg-purple-500 rounded-lg mt-20'>
 
                     <div className='text-center mb-12 pt-12'>
                         <h2 className="text-3xl font-bold sm:text-5xl ">Coming soon latest blogs</h2>

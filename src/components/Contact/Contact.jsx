@@ -27,10 +27,6 @@ const Contact = () => {
 
 
 
-
-
-
-
     return (
        <section className="py-20">
          <div className="lg:p-0 p-4">

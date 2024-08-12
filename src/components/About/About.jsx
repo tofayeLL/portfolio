@@ -64,7 +64,7 @@ const About = () => {
                 <div className='flex-1 lg:text-start text-center '>
 
                     {/* text content */}
-                    <div className="pt-24 space-y-2">
+                    <div className="lg:pt-24 pt-6 space-y-2">
                         <div className='flex items-center lg:justify-start justify-center '>
                             <span><img src="https://raw.githubusercontent.com/kekoawong/kekoawong/master/wave2.gif" alt="" className='w-16 ' /></span>
 
