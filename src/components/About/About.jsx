@@ -75,7 +75,7 @@ const About = () => {
                         <h1 className="lg:text-4xl text-2xl "> <span className="text-purple-400">
                             <Typewriter
                                 words={["I'm Tofayel Ahmed"]}
-                                loop={6}
+                                loop={Infinity}
                                 cursor
                                 cursorStyle=''
                                 typeSpeed={70}

@@ -7,6 +7,7 @@ import Skills from "../../components/Skills/Skills";
 import Blogs from "../../components/Blogs/Blogs";
 import Contact from "../../components/Contact/Contact";
 import { Link } from "react-scroll";
+import Projects from "../../components/Projects/Projects";
 
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
                                 <span className='lg:text-5xl text-xl font-bold '>
                                     <Typewriter
                                         words={["I'm Tofayel Ahmed"]}
-                                        loop={6}
+                                        loop={Infinity}
                                         cursor
                                         cursorStyle=''
                                         typeSpeed={70}
@@ -46,14 +47,14 @@ const Home = () => {
 
                             </h1>
 
-                            {/* <p className="lg:text-base text-sm font-medium text-slate-300 ">A junior front-end web developer passionate about creating responsive and intuitive web interfaces.I'm passionate about blending creativity with technical skills to build engaging digital experiences. Constantly learning and exploring new technologies, I strive to stay updated with industry trends and best practices.
-
-                            </p> */}
+                        
                             <p className="lg:text-4xl text-xl font-bold">
                             Creative Web Developer/>
                             </p>
 
-                            <p className="lg:text-base text-sm">Feel free to explore my portfolio and reach out if you’d like to connect!</p>
+                            <p className="lg:text-base text-sm">
+                                Delivering a unique identity for you and your business.
+                                I blend creativity with technical skills to build websites that stand out and perform well. Let’s create something great together that truly represents your brand.</p>
 
                             <div className="flex justify-center items-center gap-5 py-3">
                                 <div>
@@ -157,6 +158,10 @@ const Home = () => {
             {/* skills */}
             <div id="contact" className="lg:px-16 px-4">
                 <Contact></Contact>
+            </div>
+            {/* projects */}
+            <div id="projects" className="lg:px-16 px-4">
+                <Projects></Projects>
             </div>
 
 
