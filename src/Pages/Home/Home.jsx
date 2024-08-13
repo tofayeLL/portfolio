@@ -9,11 +9,28 @@ import Contact from "../../components/Contact/Contact";
 import { Link } from "react-scroll";
 import Projects from "../../components/Projects/Projects";
 import Education from "../../components/Education/Education";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 
 const Home = () => {
+
+ // Aos 
+ useEffect(() => {
+    AOS.init({
+        duration: 800
+    });
+}, []);
+
+
+
+
+
+
+
     return (
-        <section className=" min-h-screen bg-[#23226b] "   >
+        <section className=" min-h-screen bg-[linear-gradient(45deg,rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(https://i.ibb.co/5rqPS75/bg.png)] bg-center bg-cover "   >
             {/* nav */}
             <div>
                 <Nav></Nav>
@@ -21,10 +38,10 @@ const Home = () => {
 
 
             {/* home */}
-            <div className="flex  lg:flex-row flex-col justify-between items-center lg:px-16 px-4" id="home" >
+            <div className="flex  lg:flex-row flex-col justify-between items-center lg:px-16 px-4" id="home"  >
 
 
-                <div className="flex flex-1 justify-center items-center min-h-screen lg:pt-0 pt-7">
+                <div className="flex flex-1 justify-center items-center min-h-screen lg:pt-0 pt-7" data-aos="fade-down">
 
 
                     <div className="lg:w-[100%] mx-auto text-center">
@@ -49,17 +66,17 @@ const Home = () => {
                             </h1>
 
 
-                            <p className="lg:text-4xl text-xl font-bold">
-                            Creative Web Developer/>
+                            <p className="lg:text-4xl text-xl font-bold text-slate-200">
+                            Creative Web Developer
                             </p>
 
-                            <p className="lg:text-base text-sm">
+                            <p className="lg:text-base text-sm text-slate-200">
                                 Delivering a unique identity for you and your business.
                                 I blend creativity with technical skills to build websites that stand out and perform well. Let’s create something great together that truly represents your brand.</p>
 
                             <div className="flex justify-center items-center gap-5 py-3">
                                 <div>
-                                    <a href="https://drive.google.com/file/d/1II7ro9pWYJCZe39OKFcTyqWJ23BP-FlS/view?usp=sharing" target="_blank" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                    <a href="https://drive.google.com/file/d/1boNcU8VS3O0qThdyGqSnJbYBmvTT9c79/view?usp=sharing" target="_blank" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                                         <span className="w-full h-full bg-gradient-to-br from-[#a84ce6] via-[#9576ff] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#b238eb] group-hover:to-[#8347e2] absolute"></span>
                                         <span className="relative px-6 py-3 transition-all ease-out bg-[#23226b] rounded-md group-hover:bg-opacity-0 duration-400">
                                             <span className="relative lg:text-lg text-sm text-white">Download Resume</span>

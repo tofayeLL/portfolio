@@ -12,10 +12,27 @@ import mongodb from "../../assets/images/logos/mongodb1.png";
 import react from "../../assets/images/logos/physics.png";
 
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 
 
 
 const Projects = () => {
+
+
+    // Aos 
+    useEffect(() => {
+        AOS.init({
+            duration: 700
+        });
+    }, []);
+
+
+
+
     return (
         <section className="py-20">
 
@@ -42,7 +59,7 @@ const Projects = () => {
 
 
                 {/* card 1 */}
-                <div className="text-slate-200 ">
+                <div className="text-slate-200 " data-aos="fade-up">
                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 py-6 border-r-[12px] border-b-[12px] border-[1px]   shadow-2xl px-6 rounded-3xl">
 
 
@@ -150,7 +167,7 @@ const Projects = () => {
                 </div>
 
                 {/* card 2 */}
-                <div className="text-slate-200 ">
+                <div className="text-slate-200 " data-aos="fade-up">
                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 py-6 border-r-[12px] border-b-[12px] border-[1px]   shadow-2xl  px-6 rounded-3xl">
 
 
@@ -255,7 +272,7 @@ const Projects = () => {
                 </div>
 
                 {/* card 3 */}
-                <div className="text-slate-200 ">
+                <div className="text-slate-200 " data-aos="fade-up">
                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 py-6 border-r-[12px] border-b-[12px] border-[1px]   shadow-2xl  px-6 rounded-3xl">
 
 
@@ -367,7 +384,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-            
+
 
 
             </div>

@@ -13,8 +13,27 @@ import router from "../../assets/images/logos/react-router1.png";
 import jwt from "../../assets/images/logos/stripe.png";
 import stripe from "../../assets/images/logos/stripe1.png";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 
 const Skills = () => {
+
+
+
+    // Aos 
+    useEffect(() => {
+        AOS.init({
+            duration: 800
+        });
+    }, []);
+
+
+
+
+
+
     return (
         <section className="py-20">
 
@@ -40,7 +59,7 @@ const Skills = () => {
                         </div>
 
 
-                        <div className="py-20 flex justify-center items-center lg:gap-20 gap-8 flex-wrap ">
+                        <div className="py-20 flex justify-center items-center lg:gap-20 gap-8 flex-wrap " data-aos="zoom-in">
 
 
                             {/* html */}
