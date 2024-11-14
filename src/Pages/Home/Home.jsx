@@ -12,6 +12,7 @@ import Education from "../../components/Education/Education";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import ScrollToTop from "./ScrollToTop";
 
 
 const Home = () => {
@@ -200,6 +201,13 @@ const Home = () => {
             <div id="contact" className="lg:px-16 px-4">
                 <Contact></Contact>
             </div>
+
+
+
+
+
+               {/* to scroll down to up */}
+               <ScrollToTop />
 
 
 
