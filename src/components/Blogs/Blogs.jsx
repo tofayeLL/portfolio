@@ -9,7 +9,8 @@ import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 
 import { useEffect, useState } from 'react';
 
-import developer from "../../assets/images/pictures/developer.jpg"
+import developer from "../../assets/images/pictures/developer.jpg";
+
 
 
 const Blogs = () => {
@@ -38,7 +39,7 @@ const Blogs = () => {
                     <a className="relative px-6 py-4 font-semibold text-slate-200 group">
                         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-purple-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full border-4 border-slate-400 "></span>
-                        <span className="relative px-2 py-2   font-bold  lg:text-4xl text-xl uppercase">Blogs</span>
+                        <span className="relative px-2 py-2 font-mono   font-bold  lg:text-4xl text-xl uppercase">Blogs</span>
                     </a>
 
                 </div>
@@ -52,7 +53,7 @@ const Blogs = () => {
                 <div className=' w-full bg-purple-500 rounded-lg mt-20'>
 
                     <div className='text-center mb-12 pt-12'>
-                        <h2 className="text-3xl font-bold sm:text-5xl ">Coming soon latest blogs</h2>
+                        <h2 className="text-3xl font-bold sm:text-5xl font-mono text-slate-100">Coming soon latest blogs</h2>
                     </div>
 
 
@@ -111,8 +112,6 @@ const Blogs = () => {
 
 
 
-
-
                                                 <div className='border-[1px] w-full border-cyan-600 rounded-lg lg:p-4    shadow-lg'>
                                                     <article className="flex flex-col dark:bg-gray-50 space-y-2">
                                                         <div >
@@ -137,11 +136,6 @@ const Blogs = () => {
                                                 </div>
 
 
-
-
-
-
-
                                             </SwiperSlide>
                                         </div>
 
@@ -159,17 +153,7 @@ const Blogs = () => {
 
                 </div>
 
-
-
-
-
-
-
-
             </div>
-
-
-
 
         </section>
     );

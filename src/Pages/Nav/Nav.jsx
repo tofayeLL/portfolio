@@ -10,7 +10,7 @@ const Nav = () => {
 
 
 
-            <div className="navbar fixed z-10  bg-opacity-20  lg:text-slate-200 text-black lg:bg-transparent   py-2 ">
+            <div className="navbar fixed z-10    lg:text-slate-200 text-black    py-2 lg:px-14">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
@@ -29,7 +29,7 @@ const Nav = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow  space-y-3 font-semibold bg-white">
+                            className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-40 p-2 shadow  space-y-3 font-semibold bg-white">
 
                               <Link
                             to="home"
@@ -112,13 +112,13 @@ const Nav = () => {
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost lg:block hidden text-xl "><img src={logo} alt="" className="w-32 h-11"/></a>
+                    <a className="text-4xl lg:block hidden font-bold  font-mono"><span className="text-purple-600 ">Tofayel</span> Ahmed</a>
                     
                 </div>
-                <a className="btn btn-ghost text-xl text-white  lg:hidden navbar-end "><img src={logo} alt="" className="w-24 h-8"/></a>
+                <a className="btn btn-ghost text-xl text-white  lg:hidden navbar-end "><span className="text-purple-600 ">Tofayel</span> Ahmed</a>
                 
                 <div className="lg:navbar-end hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 space-x-6  text-white">
+                    <ul className="menu menu-horizontal px-1 space-x-6  text-white font-mono lg:mr-3">
 
                       {/* this "Link" import from react scroll not react dom */}
                        <Link

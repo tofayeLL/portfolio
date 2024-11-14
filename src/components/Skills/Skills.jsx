@@ -46,7 +46,7 @@ const Skills = () => {
                         <a className="relative px-6 py-4 font-semibold text-slate-200 group">
                             <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-purple-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                             <span className="absolute inset-0 w-full h-full border-4 border-slate-400 "></span>
-                            <span className="relative px-2 py-2  font-bold  lg:text-4xl text-xl uppercase">My skills</span>
+                            <span className="relative px-2 py-2 font-mono font-bold  lg:text-4xl text-xl uppercase">My skills</span>
                         </a>
 
                     </div>

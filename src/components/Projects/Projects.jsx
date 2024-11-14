@@ -4,12 +4,18 @@ import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import ekocraft from '../../assets/images/pictures/ecocraft.png';
 import doctorConsulta from '../../assets/images/pictures/doctorConsulta.png';
 import zipParcel from '../../assets/images/pictures/zippparcel.png';
+import Babelforge from '../../assets/images/pictures/babelforge.png';
 import tailwind from "../../assets/images/logos/tailwind-css-48.png";
 import express from "../../assets/images/logos/express-js-48.png";
 import firebase from "../../assets/images/logos/firebase-console-48.png";
 import daisy from "../../assets/images/logos/daisy1.jpg";
 import mongodb from "../../assets/images/logos/mongodb1.png";
 import react from "../../assets/images/logos/physics.png";
+import Next from "../../assets/images/logos/Next.js.png";
+import ShadCnUi from "../../assets/images/logos/shadCnUi.png";
+import nodeJS from "../../assets/images/logos/programing.png";
+import jwt from "../../assets/images/logos/stripe.png";
+
 
 
 import AOS from 'aos';
@@ -41,7 +47,7 @@ const Projects = () => {
                 <a className="relative px-6 py-4 font-semibold text-slate-200 group">
                     <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-purple-600 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                     <span className="absolute inset-0 w-full h-full border-4 border-slate-400 "></span>
-                    <span className="relative px-2 py-2   font-bold  lg:text-4xl text-xl uppercase">My Projects</span>
+                    <span className="relative px-2 py-2 font-mono   font-bold  lg:text-4xl text-xl uppercase">My Projects</span>
                 </a>
 
             </div>
@@ -56,6 +62,123 @@ const Projects = () => {
 
             {/* card container */}
             <div className="pt-16 space-y-16">
+
+                {/* card Team */}
+                <div className="text-slate-200 " data-aos="fade-up">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 py-6 border-r-[12px] border-b-[12px] border-[1px]   shadow-2xl px-6 rounded-3xl">
+
+
+                        <div className="rounded-xl flex-1 lg:h-[75vh] h-[52vh] mx-auto  overflow-hidden ">
+                            <div className="relative rounded-lg shadow-xl">
+                                <img src={Babelforge} alt="" className="rounded-lg transition-transform duration-[2.5s] ease-linear transform hover:translate-y-[-70%]" />
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div className="flex flex-1 flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left ">
+                            <p className="pb-4 text-orange-400 text-xl"> Featured Project ( Team project )</p>
+                            <div className="space-y-2">
+                                <h1 className="lg:text-4xl text-xl font-semibold text-purple-400 leading-none ">BabelForge</h1>
+                                <p className="text-lg font-normal">-A Team Collaboration Tool</p>
+                            </div>
+
+                            <p className="mt-4  text-base ">BabelForge is a collaborative team management platform developed by a team of dedicated individuals, including myself, aimed at streamlining project coordination and boosting productivity. Built with Next.js, BabelForge combines seamless team management with a range of powerful features. Its user-friendly interface enhances communication and organization, enabling teams to work together efficiently.
+                            </p>
+
+                            {/* technologies */}
+                            <div className="pt-8  flex  items-center gap-7 flex-wrap">
+
+
+                                {/* Next js */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={Next} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* ShadCnUi */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={ShadCnUi} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+
+                                {/* Tailwind */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={tailwind} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+
+                                {/* express */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={express} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* nodeJS */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={nodeJS} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* jwt */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={jwt} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* mongodb */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={mongodb} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div className="flex flex-col  sm:items-center sm:justify-center sm:flex-row lg:justify-start gap-4 mt-10 ">
+
+
+                                <a href="https://babel-forge.vercel.app" target="_blank" className="relative inline-flex items-center justify-center px-4 py-2 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
+                                    <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-purple-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-white rounded-md "></span>
+                                    <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-in-out delay-100 bg-purple-600 rounded-md opacity-0 group-hover:opacity-100 "></span>
+                                    <span className="relative flex items-center gap-2 text-purple-600 transition-colors duration-200 ease-in-out delay-100 group-hover:text-white">Visit <span><FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></span></span>
+                                </a>
+
+
+
+                                <a rel="noopener noreferrer" href="https://github.com/younusFoysal/BabelForge" target="_blank" className="px-4 py-2 text-lg font-normal rounded-md text-white border hover:underline border-white bg-purple-700 flex justify-center items-center gap-2"><span className="text-xl"><FaGithub></FaGithub> </span> Client</a>
+
+
+                                <a rel="noopener noreferrer" href="https://github.com/younusFoysal/BabelForge-Server" target="_blank" className="px-4 py-2 text-lg font-normal text-white border hover:underline border-white bg-purple-700  rounded-md flex justify-center items-center gap-2"><span className="text-xl"><FaGithub></FaGithub> </span>Server</a>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
 
 
                 {/* card 1 */}
@@ -74,7 +197,7 @@ const Projects = () => {
 
 
                         <div className="flex flex-1 flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left ">
-                            <p className="pb-4 text-orange-400 text-xl">Featured Projects</p>
+                            <p className="pb-4 text-orange-400 text-xl"> Featured Project</p>
                             <div className="space-y-2">
                                 <h1 className="lg:text-4xl text-xl font-semibold text-purple-400 leading-none ">ZipParcel</h1>
                                 <p className="text-lg font-normal">-A Parcel Management Website</p>
@@ -106,6 +229,13 @@ const Projects = () => {
                                 <div className='text-center space-y-2  flex flex-col items-center'>
                                     <div className=''>
                                         <img src={tailwind} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* nodejs */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={nodeJS} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
                                     </div>
 
                                 </div>
@@ -182,7 +312,7 @@ const Projects = () => {
 
 
                         <div className="flex flex-1 flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left ">
-                            <p className="pb-6 text-orange-400 text-xl">Featured Projects</p>
+                            <p className="pb-6 text-orange-400 text-xl"> Featured Project</p>
                             <div className="space-y-2">
                                 <h1 className="lg:text-4xl text-xl font-semibold text-purple-400 leading-none ">DoctorConsulta</h1>
                                 <p className="text-lg font-normal">-Doctor consultation services Website</p>
@@ -214,6 +344,13 @@ const Projects = () => {
                                 <div className='text-center space-y-2  flex flex-col items-center'>
                                     <div className=''>
                                         <img src={tailwind} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* nodejs */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={nodeJS} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
                                     </div>
 
                                 </div>
@@ -287,7 +424,7 @@ const Projects = () => {
 
 
                         <div className="flex flex-1 flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left ">
-                            <p className="pb-6 text-orange-400 text-xl">Featured Projects</p>
+                            <p className="pb-6 text-orange-400 text-xl"> Featured Project</p>
                             <div className="space-y-2">
                                 <h1 className="lg:text-4xl text-xl font-semibold text-purple-400 leading-none ">EcoKrafts</h1>
                                 <p className="text-lg font-normal">-Eco-friendly craft products Shop Website</p>
@@ -322,6 +459,13 @@ const Projects = () => {
                                 <div className='text-center space-y-2  flex flex-col items-center'>
                                     <div className=''>
                                         <img src={tailwind} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
+                                    </div>
+
+                                </div>
+                                {/* nodejs */}
+                                <div className='text-center space-y-2  flex flex-col items-center'>
+                                    <div className=''>
+                                        <img src={nodeJS} alt="" className='w-12 bg-slate-300 object-cover object-center rounded-md p-1' />
                                     </div>
 
                                 </div>
